@@ -1,0 +1,22 @@
+{
+  "name": "setuptools",
+  "version": "80.9.0",
+  "build": "py312hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "setuptools-80.9.0-py312hca03da5_0.conda",
+  "md5": "411ab466ed48b46fc059ef8520832901",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/setuptools-80.9.0-py312hca03da5_0.conda",
+  "sha256": "bfd0f03f1a474551895800d627f3393048f110ed78d67fadbad610bfc189b667",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "python >=3.12,<3.13.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1759863068000,
+  "size": 1930856
+}

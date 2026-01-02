@@ -1,0 +1,23 @@
+{
+  "xz": "5",
+  "gil_type": "normal",
+  "CONDA_BUILD_SYSROOT": "/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk",
+  "tk": "8.6",
+  "expat": "2",
+  "sqlite": "3",
+  "ncurses": "6",
+  "bzip2": "1",
+  "zlib": "1.2",
+  "c_compiler": "clang",
+  "libffi": "3.4",
+  "target_platform": "osx-arm64",
+  "c_stdlib": "macosx_deployment_target",
+  "openssl": "3",
+  "channel_targets": "defaults",
+  "readline": "8",
+  "c_compiler_version": "20",
+  "cxx_compiler_version": "20",
+  "c_stdlib_version": "12.1",
+  "cxx_compiler": "clangxx",
+  "__osx": "__osx >=12.1"
+}

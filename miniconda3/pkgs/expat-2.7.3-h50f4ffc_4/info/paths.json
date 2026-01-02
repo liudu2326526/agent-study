@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "bin/xmlwf",
+      "path_type": "hardlink",
+      "sha256": "683bae15dba981901febbbe7b12eecbbabdad1a623704bfbda07f6c2250151c0",
+      "size_in_bytes": 91088
+    },
+    {
+      "_path": "share/man/man1/xmlwf.1",
+      "path_type": "hardlink",
+      "sha256": "4b5ed7f205befa0c90078e7141081cec1c255eeca9e19a2f9e95f70e6d331e5f",
+      "size_in_bytes": 11417
+    }
+  ],
+  "paths_version": 1
+}

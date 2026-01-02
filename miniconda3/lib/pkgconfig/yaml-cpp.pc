@@ -1,0 +1,11 @@
+prefix=/Users/macbook/Documents/trae_projects/agent-study/miniconda3
+exec_prefix=${prefix}
+includedir=/Users/macbook/Documents/trae_projects/agent-study/miniconda3/include
+libdir=/Users/macbook/Documents/trae_projects/agent-study/miniconda3/lib
+
+Name: Yaml-cpp
+Description: A YAML parser and emitter for C++
+Version: 0.8.0
+Requires:
+Libs: -L${libdir} -lyaml-cpp
+Cflags: -I${includedir}

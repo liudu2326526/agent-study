@@ -1,0 +1,22 @@
+{
+  "arch": "arm64",
+  "build": "py313hca03da5_0",
+  "build_number": 0,
+  "constrains": [
+    "backports.zstd >=1.0.0",
+    "h2 >=4,<5"
+  ],
+  "depends": [
+    "brotlicffi >=1.2.0",
+    "pysocks >=1.5.6,<2.0,!=1.5.7",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "urllib3",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1765399224049,
+  "version": "2.6.1"
+}

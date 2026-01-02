@@ -1,0 +1,38 @@
+{
+  "name": "typer-slim-standard",
+  "version": "0.20.0",
+  "build": "py313hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "typer-slim-standard-0.20.0-py313hca03da5_0.conda",
+  "md5": "243c1dcc493467a4ba7a4de2b80b82a1",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/typer-slim-standard-0.20.0-py313hca03da5_0.conda",
+  "sha256": "e2a3a509eed76e4ff9203755fd609cb6266a87f63ff7c74eeb03803d1b55b818",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "rich",
+    "shellingham",
+    "typer-slim 0.20.0 py313hca03da5_0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1765547275000,
+  "size": 6918,
+  "requested_spec": "pkgs/main/osx-arm64::typer-slim-standard==0.20.0=py313hca03da5_0",
+  "package_tarball_full_path": "/Users/macbook/Documents/trae_projects/agent-study/miniconda3/pkgs/typer-slim-standard-0.20.0-py313hca03da5_0.conda",
+  "extracted_package_dir": "/Users/macbook/Documents/trae_projects/agent-study/miniconda3/pkgs/typer-slim-standard-0.20.0-py313hca03da5_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/macbook/Documents/trae_projects/agent-study/miniconda3/pkgs/typer-slim-standard-0.20.0-py313hca03da5_0",
+    "type": 1
+  }
+}

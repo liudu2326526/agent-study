@@ -1,0 +1,9 @@
+libdir=/Users/macbook/Documents/trae_projects/agent-study/miniconda3/lib
+includedir=/Users/macbook/Documents/trae_projects/agent-study/miniconda3/include
+
+Name: libsolvext
+Description: Library for reading repositories
+Version: 0.7.30
+Requires: libsolv
+Libs: -L${libdir} -lsolvext
+Cflags: -I${includedir}

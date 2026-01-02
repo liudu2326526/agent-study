@@ -1,0 +1,11 @@
+{
+  "mod": "Thu, 06 Feb 2025 17:01:54 GMT",
+  "etag": "\"344a60cb6febc4f8900ab41997482472\"",
+  "cache_control": "public, max-age=30",
+  "blake2_256_nominal": "5fef5ecd58e910a94a67a301886e09ebcd03e7aeb542433d79dd71e88a1c22cf",
+  "blake2_256": "5fef5ecd58e910a94a67a301886e09ebcd03e7aeb542433d79dd71e88a1c22cf",
+  "url": "https://repo.anaconda.com/pkgs/r/osx-arm64",
+  "size": 130,
+  "mtime_ns": 1767324682961648184,
+  "refresh_ns": 1767324682962407000
+}

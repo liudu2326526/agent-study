@@ -1,0 +1,25 @@
+{
+  "arch": "arm64",
+  "build": "h50f4ffc_4",
+  "build_number": 4,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64/",
+  "constrains": [
+    "expat 2.7.3.*"
+  ],
+  "depends": [
+    "__osx >=12.1",
+    "libcxx >=20"
+  ],
+  "fn": "libexpat-2.7.3-h50f4ffc_4.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "393b394957e5f0a3e9198f499beb6268",
+  "name": "libexpat",
+  "platform": "darwin",
+  "sha256": "a635b6174d32a0d9f001b185b7138e5a65d57634566684e68ef0b7509e7a4f44",
+  "size": 110055,
+  "subdir": "osx-arm64",
+  "timestamp": 1765208107000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libexpat-2.7.3-h50f4ffc_4.conda",
+  "version": "2.7.3"
+}
