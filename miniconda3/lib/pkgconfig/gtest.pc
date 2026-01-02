@@ -1,9 +1,0 @@
-libdir=/Users/macbook/Documents/trae_projects/agent-study/miniconda3/lib
-includedir=/Users/macbook/Documents/trae_projects/agent-study/miniconda3/include
-
-Name: gtest
-Description: GoogleTest (without main() function)
-Version: 1.11.0
-URL: https://github.com/google/googletest
-Libs: -L${libdir} -lgtest 
-Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1

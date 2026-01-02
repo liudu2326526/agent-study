@@ -1,1 +1,0 @@
-["cmake-no-system", "clang_osx-arm64 20.*", "clangxx_osx-arm64 20.*", "macosx_deployment_target_osx-arm64 12.1.*", "ninja-base", "make", "ripgrep"]
