@@ -31,8 +31,8 @@ graph TD
     
     subgraph "Backend Services"
         Server --> Auth[认证模块]
-        Server --> KB[知识库服务 (RAG)]
-        Server --> Agent[Agent 引擎 (LangChain)]
+        Server --> KB[知识库服务 RAG]
+        Server --> Agent[Agent 引擎 LangChain]
         
         Agent --> Memory[会话记忆]
         Agent --> Planner[意图识别 & 规划]
@@ -45,7 +45,7 @@ graph TD
         Server --> SQLite[(SQLite DB)]
     end
     
-    subgraph "External Tools (MCP)"
+    subgraph "External Tools MCP"
         MCPServer --> WebSearch[Google Search]
         MCPServer --> ImgGen[Flux/Midjourney]
         MCPServer --> ImgOpt[Image Optimization]
