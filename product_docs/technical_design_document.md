@@ -114,40 +114,43 @@ erDiagram
     Conversation ||--o{ Message : contains
     
     User {
-        int id PK
-        string username
-        string email
-        string password_hash
-        datetime created_at
+        int id PK "用户唯一标识"
+        string username "用户名"
+        string email "邮箱地址"
+        string password_hash "加密后的密码"
+        datetime created_at "注册时间"
     }
     
     Conversation {
-        int id PK
-        int user_id FK
-        string title
-        datetime created_at
-        datetime updated_at
+        string id PK "会话ID (session_id)"
+        int user_id FK "所属用户ID"
+        string title "会话标题 (自动生成或手动设置)"
+        datetime created_at "会话创建时间"
+        datetime updated_at "最后交互时间"
     }
     
     Message {
-        int id PK
-        int conversation_id FK
-        string role "user/assistant/system"
-        text content
-        json meta_data "引用来源, 耗时, 工具调用信息"
-        datetime created_at
+        int id PK "消息唯一标识"
+        string session_id FK "关联的会话ID"
+        string type "消息类型: human/ai/tool"
+        text content "消息文本内容或工具输出结果"
+        json response_metadata "元数据: token消耗, 模型名, 耗时等"
+        json tool_calls "工具调用请求列表 (仅 type=ai)"
+        string tool_call_id "关联的工具调用ID (仅 type=tool)"
+        string name "工具名称 (仅 type=tool)"
+        datetime created_at "消息发送时间"
     }
     
     Document {
-        int id PK
-        int user_id FK
-        string filename
-        string file_path "本地存储路径"
-        string file_type "pdf/docx/xlsx"
-        int size
-        string status "pending/indexed/failed"
-        string vector_id "向量库关联ID"
-        datetime uploaded_at
+        int id PK "文档唯一标识"
+        int user_id FK "所属用户ID"
+        string filename "原始文件名"
+        string file_path "服务器本地存储路径"
+        string file_type "文件类型后缀: pdf, docx, etc."
+        int size "文件大小 (bytes)"
+        string status "处理状态: pending/indexed/failed"
+        string vector_id "向量库中的集合ID或索引ID"
+        datetime uploaded_at "上传时间"
     }
 ```
 
@@ -155,10 +158,12 @@ erDiagram
 
 1.  **Users**: 简单的用户认证表。
 2.  **Conversations**: 会话容器，用于历史记录列表展示。
-3.  **Messages**: 核心消息表。
-    *   `content`: 存储 Markdown 格式的文本。
-    *   `meta_data`: JSON 字段，灵活存储额外信息。
-        *   例如：`{"citations": [{"id": 1, "page": 2}], "tool_calls": [{"name": "google_search", "args": "..."}]}`
+3.  **Messages**: 核心消息表，结构严格对齐 LangChain `BaseMessage` 字段。
+    *   `type`: 消息类型，枚举值 `human` (用户), `ai` (模型), `tool` (工具执行结果)。
+    *   `content`: 消息文本内容。
+    *   `tool_calls`: (AI 消息专用) 存储模型生成的工具调用请求，例如 `[{"name": "get_weather", "args": {"city": "深圳"}, "id": "call_..."}]`。
+    *   `tool_call_id`: (Tool 消息专用) 对应 `tool_calls` 中的 `id`，用于关联工具结果与请求。
+    *   `response_metadata`: 存储 Token 消耗 (`token_usage`)、模型名称 (`model_name`)、耗时等元数据。
 4.  **Documents**: 文档元数据表。
     *   `status`: 索引状态机，确保前端能轮询到文件是否处理完毕。
 
