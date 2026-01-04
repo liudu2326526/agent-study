@@ -60,3 +60,5 @@ wheel==0.45.1
 xxhash==3.6.0
 yarl==1.22.0
 zstandard==0.25.0
+langchain-mcp-adapters==0.1.12
+mcp==1.21.0
